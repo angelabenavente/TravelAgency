@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Bahia Inglesa",
+    "description": "A very nice place Lorem ipsum",
+    "moreInfo": "Nesque quisquam est, qui dolorem ist",
+    "image": "image.png",
+    "price": 199
+  },
+  {
+    "id": 2,
+    "name": "Iquique",
+    "description": "A very nice place Lorem ipsum",
+    "moreInfo": "Nesque quisquam est, qui dolorem ist",
+    "image": "image.png",
+    "price": 199
+  },
+  {
+    "id": 3,
+    "name": "Arica",
+    "description": "A very nice place Lorem ipsum",
+    "moreInfo": "Nesque quisquam est, qui dolorem ist",
+    "image": "image.png",
+    "price": 199
+  }
+]
