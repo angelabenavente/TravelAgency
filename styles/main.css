@@ -1,0 +1,25 @@
+.item-title {
+  margin: 10px 0px
+}
+
+.item-box p {
+  color: #6f6f6e;
+}
+
+.item-price {
+  margin: 10px 8px;
+}
+
+.more-info {
+  margin-top: 20px;
+  display: none;
+}
+
+button {
+  background-color: #e17bba;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
