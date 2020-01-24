@@ -1,55 +1,54 @@
-$(document).ready(function() { 
-  // $('.item-box').on('click', 'a.info-link', function(event) {
-  //   event.preventDefault()
+$(function(){
 
-  //   //Show() and hide() are replaced by toggle()
-  //   $(this).closest('.item-box').find('.more-info').slideToggle('fast') 
-  // })
-
-  $.ajax('data.json', {
-    dataType: 'json',
-    contentType: 'application/json',
-    cache: false
-  })
-  .done(function(response) {
-    let html;
-
-    $.each(response, function(index, element) {
-      html = '<div class="item-box" data-id="'+element.id+'">';
-      html += '<img src="images/'+element.image+'" />';
-      html += '<div class="item-title">'+element.name+'</div>';
-      html += '<p>'+element.description+'</p>';
-      html += '<div class="item-price">'+element.price+'</div>';
-      html += '<button>Add to cart</button>';
-      html += '<div><a href="#" class="info-link">More info</a></div>';
-      html += '<div class="more-info"><p>'+element.moreInfo+'</p></div>';
-      html += '</div>'
-
-      $('body').append(html);
-    });
+  $("#cart-items").slideUp();
+  $(".cart").on("click", function () {
+  $("#cart-items").slideToggle();
   });
+
+  $("#items-basket").text("(" + ($("#list-item").children().length) + ")");
 
   $('body').on('click', '.info-link', function(event) {
     event.preventDefault()
-    $(this).closest('.item-box').find('.more-info').slideToggle('fast') 
+    $(this).closest('.item').find('.more-info').slideToggle('fast') 
   })
 
-  let cart = 0;
 
-  $('body').on('click', '.item-box button', function(event) {
-    event.preventDefault();
-    let id = +$(this).closest('.item-box').data('id');
+  $(".item").on("click", '.item-detail button', function () {
+    $("#cart-items").slideDown();
+   setTimeout(function(){
+      $("#cart-items").slideUp();
+   }, 2000)
+    //add items to basket
+    $(this).each(function () {
+      var name = $(this).closest(".item-detail").children("h4").text();
+      var remove = "<button class='remove'> X </button>";
+      var cena = "<span class='eachPrice'>" + (parseFloat($(this).closest(".item-detail").children(".prices").children(".price").text())) + "</span>";
+      $("#list-item").append("<li>" + name + "&#09; - &#09;" + cena + "$" + remove + "</li>");
 
-    $.ajax('addItem.json', {
-      data: {id: id},
-      type: 'post',
-      dataType: 'json',
-      contentType: 'application/json'
-    })
-    .done(function(response) {
-      cart += response.price;
-      $('#total-cost').text('Total $'+cart);
-    })
-  })
+      //number of items in basket
+      $("#items-basket").text("(" + ($("#list-item").children().length) + ")");
+      $("#items-basket").text();
+      
+        //calculate total price
+        var totalPrice = 0;
+          $(".eachPrice").each(function (){ 
+            var cenaEach = parseFloat($(this).text());
+            totalPrice+=cenaEach;
+          });
+          $("#total-price").text(totalPrice + "$");
+    });
 
+    //remove items from basket
+    $(".remove").on("click", function () {
+      $(this).parent().remove();
+
+          var totalPrice = 0;
+          $(".eachPrice").each(function (){ 
+            var cenaEach = parseFloat($(this).text());
+            totalPrice+=cenaEach;
+          });
+          $("#total-price").text(totalPrice + "$");
+      $("#items-basket").text("(" + ($("#list-item").children().length) + ")");
+    });
+  });
 })
