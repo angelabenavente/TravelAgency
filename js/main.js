@@ -17,15 +17,20 @@ $(document).ready(function() {
     $.each(response, function(index, element) {
       html = '<div class="item-box" data-id="'+element.id+'">';
       html += '<img src="images/'+element.image+'" />';
-      html += '<div class="item-title">Bahía Inglesa</div>';
-      html += '<p></p>';
-      html += '<div class="item-price">$199</div>';
+      html += '<div class="item-title">'+element.name+'</div>';
+      html += '<p>'+element.description+'</p>';
+      html += '<div class="item-price">'+element.price+'</div>';
       html += '<button>Add to cart</button>';
       html += '<div><a href="#" class="info-link">More info</a></div>';
-      html += '<div class="more-info"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique tempore explicabo ab! Ipsum unde modi quod ipsam ducimus, repudiandae inventore. Accusamus, odio eveniet obcaecati placeat natus explicabo sapiente temporibus repudiandae.</p></div>';
+      html += '<div class="more-info"><p>'+element.moreInfo+'</p></div>';
       html += '</div>'
 
       $('body').append(html);
-    })
+    });
+  });
+
+  $('body').on('click', '.info-link', function(event) {
+    event.preventDefault()
+    $(this).closest('.item-box').find('.more-info').slideToggle('fast') 
   })
 })
