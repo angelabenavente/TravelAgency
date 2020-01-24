@@ -33,4 +33,23 @@ $(document).ready(function() {
     event.preventDefault()
     $(this).closest('.item-box').find('.more-info').slideToggle('fast') 
   })
+
+  let cart = 0;
+
+  $('body').on('click', '.item-box button', function(event) {
+    event.preventDefault();
+    let id = +$(this).closest('.item-box').data('id');
+
+    $.ajax('addItem.json', {
+      data: {id: id},
+      type: 'post',
+      dataType: 'json',
+      contentType: 'application/json'
+    })
+    .done(function(response) {
+      cart += response.price;
+      $('#total-cost').text('Total $'+cart);
+    })
+  })
+
 })
