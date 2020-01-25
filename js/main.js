@@ -28,7 +28,7 @@ $(function(){
     $(this).each(function () {
       var name = $(this).closest(".item-detail").children("h4").text();
       var remove = "<button class='remove'><i class='fas fa-times'></i></button>";
-      var cena = "<span class='eachPrice'>" + (parseFloat($(this).closest(".item-detail").children(".prices").children(".price").text())) + "</span>";
+      var cena = "<span class='eachPrice'>" + (parseFloat($(this).closest(".item-detail").children('.prices').children('.priceContainer').children(".price").text())) + "</span>";
       $("#list-item").append("<li>" + name + "&#09; - &#09;" + cena + "$" + remove + "</li>");
 
       //number of items in basket
