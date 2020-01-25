@@ -1,27 +1,28 @@
 *{
 	margin: 0px;
 	padding: 0px;
+}
+html {
 	overflow-x: hidden;
 }
-
 body {
 	height: 100vh;
 	width: 100vw;
-	background-image: url(../images/nubes.jpg);
+	/* background-image: url(../images/nubes.jpg); */
 	background-repeat: no-repeat;
 	background-size: cover;
-
+	overflow-x: hidden;
 }
 
 main {
 	padding-top: 20px;
-	background-image: linear-gradient(90deg, rgba(166, 216, 211, 0.62) 0%, rgba(151, 173, 148, 0.64) 35%, rgba(222, 220, 191, 0.48) 100%);
-	height: 100%;
+	/* background-image: linear-gradient(90deg, rgba(166, 216, 211, 0.62) 0%, rgba(151, 173, 148, 0.64) 35%, rgba(222, 220, 191, 0.48) 100%);
+	height: 100%; */
 }
 img{
 	width: 100%;
-	height: 200px;
-	margin-bottom: 10px;
+	height: 300px;
+	/* margin-bottom: 10px; */
 }
 
 .fa{
@@ -53,9 +54,16 @@ img{
 	text-align: center;
 }
 
+.cart:hover {
+	transform: scale(1.05);
+	text-shadow: -1px 1px 2px #5e330bee;
+}
+
 .total-text p{
 	display: inline;
+	cursor: pointer;
 }
+
 
 #cart-items{
 	position: absolute;
@@ -88,18 +96,19 @@ main {
 	position: relative;
 	/* float: left; */
 	margin: 1%;
-	border: 1px solid #33333346;
-	width: 300px;
+	/* border: 1px solid #33333346; */
+	width: 350px;
 	height: fit-content;
 	text-align: center;
-	padding-bottom: 20px;
 	text-align: left;
 	background-color: #56297d;
 	background-color: #d46f10;
-	background-color: white;
+	background-color: rgb(97, 87, 87);
+	background-color: rgb(214, 210, 210);
 	border: none;
-
+	/* border: 1px solid #808080; */
 }
+
 
 .item-detail h4{
 	color: #56297d;
@@ -107,7 +116,7 @@ main {
 	margin-bottom: 10px;
 	text-transform: uppercase;
 	position: absolute;
-	top: 100px;
+	top: 120px;
 	color: white; 
 	text-shadow: -1px 1px 4px #010713; 
 }
@@ -129,8 +138,10 @@ main {
 	flex-direction: row;
 	justify-content: space-between;
 	position: absolute;
-	top: 180px;
+	top: 156px;
+	width: 93%;
 	color: white;
+	text-shadow: -1px 1px 4px #010713; 
 }
 
 .prices p{
@@ -175,6 +186,12 @@ main {
 	margin-left: 10px;
 	margin-right: 10px;
 	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+.show-details:hover{
+	font-size: 31px;
+	text-shadow: 2px 1px 4px #000308;
 }
 
 .info-link {
@@ -183,6 +200,7 @@ main {
 	margin-right: 10px;
 	text-decoration: none;
 	color: white;
+	color: rgb(212, 111, 16);
 }
 .show-details {
 	font-display: flex;
@@ -193,8 +211,11 @@ main {
 	align-items: center;
 	text-align: right;
 	position: absolute;
-	top: 160px;
-	color: white;
+	top: 266px;
+	right: -18px;
+	color: rgb(212, 111, 16);
+	font-size: 30px;
+	text-shadow: 1px 1px 4px #010713;
 }
 
 
@@ -212,16 +233,37 @@ button {
 	margin-right: 10px;
 }
 
+button:hover {
+	transform: scale(1.1);
+	text-shadow: -1px 1px 2px #5e330bee;
+}
+
+.secondButton:hover {
+	transform: scale(1.05);
+	box-shadow: 2px 4px 7px #000308ce;
+	margin-left: 63%;
+	text-shadow: none;
+}
+
+.firstButton:hover {
+	transform: scale(1.05);
+	box-shadow: 2px 4px 7px #000308ce;
+	margin-left: 63%;
+	text-shadow: none;
+}
+
 .secondButton {
-	margin-left: 64.7%;
+	margin-left: 63.3%;
 	position: absolute;
 	top: 0;
-	left: 0;
+	left: 18px;
+	box-shadow: 2px 4px 7px #0003089e;
 }
 
 
 .firstButton {
 	position: absolute;
 	top: 0;
-	left: 0;
+	left: 18px;
+	box-shadow: 2px 4px 7px #0003089e;
 }

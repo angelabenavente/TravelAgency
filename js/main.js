@@ -11,9 +11,9 @@ $(function(){
     event.preventDefault()
     $(this).closest('.item').find('.more-info').slideToggle('fast', function() {
       if ($(this).is(':visible')) {
-        $(this).prev('div').html('<a href="#" class="info-link">Close details</a>');                
+        $(this).prev('div').html('<a href="#" class="info-link"><i class="fas fa-times-circle"></i></a>');
       } else {
-        $(this).prev('div').html('<a href="#" class="info-link">Show details</a>');          
+        $(this).prev('div').html('<a href="#" class="info-link"><i class="fas fa-info-circle"></a>');          
       }        
   });       
   })
