@@ -9,7 +9,13 @@ $(function(){
 
   $('body').on('click', '.info-link', function(event) {
     event.preventDefault()
-    $(this).closest('.item').find('.more-info').slideToggle('fast') 
+    $(this).closest('.item').find('.more-info').slideToggle('slow', function() {
+      if ($(this).is(':visible')) {
+        $(this).prev('div').html('<a href="#" class="info-link">Less info</a>');                
+      } else {
+        $(this).prev('div').html('<a href="#" class="info-link">More info</a>');          
+      }        
+  });       
   })
 
 
