@@ -11,9 +11,9 @@ $(function(){
     event.preventDefault()
     $(this).closest('.item').find('.more-info').slideToggle('fast', function() {
       if ($(this).is(':visible')) {
-        $(this).prev('div').html('<a href="#" class="info-link">Less info</a>');                
+        $(this).prev('div').html('<a href="#" class="info-link">Close details</a>');                
       } else {
-        $(this).prev('div').html('<a href="#" class="info-link">More info</a>');          
+        $(this).prev('div').html('<a href="#" class="info-link">Show details</a>');          
       }        
   });       
   })
@@ -27,7 +27,7 @@ $(function(){
     //add items to basket
     $(this).each(function () {
       var name = $(this).closest(".item-detail").children("h4").text();
-      var remove = "<button class='remove'> X </button>";
+      var remove = "<button class='remove'><i class='fas fa-times'></i></button>";
       var cena = "<span class='eachPrice'>" + (parseFloat($(this).closest(".item-detail").children(".prices").children(".price").text())) + "</span>";
       $("#list-item").append("<li>" + name + "&#09; - &#09;" + cena + "$" + remove + "</li>");
 
