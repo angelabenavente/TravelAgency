@@ -46,6 +46,8 @@ body {
 	/*background-color: #f5f5f5;*/
 	border-top: 1px solid rgba(51, 51, 51, 0.363);
 	border-bottom: 1px solid rgba(51, 51, 51, 0.363);
+	background-color: #d46b14;
+    color: white;
 }
 
 .services {
@@ -64,7 +66,7 @@ body {
 
 }
 .fa-check {
-	color: green;
+	color: white;
 	margin-right: 8px;
 }
 main {
@@ -91,7 +93,7 @@ img{
 	background-color: #c63666;
 	background-color: #377786;
 	background-color:#5841a0;
-	background-color: #d46f10;
+	background-color: #d46b15;
 	color: white;
 	clear: both;
 	padding: 20px 50px;
@@ -244,7 +246,7 @@ img{
     margin: 10px 10px 10px;
 		cursor: pointer;
 		box-shadow: 2px 4px 7px #000308ce;
-    border: 2px solid #d46f10;
+		border: 2px solid #d46b15;
     -moz-transition: .3s;
     -o-transition: .3s;
     -webkit-transition: .3s;
@@ -252,15 +254,15 @@ img{
 }
 
 .slider > ul > .showli {
-    background-color: #d46f10;
-    -moz-animation: boing .5s forwards;
-    -o-animation: boing .5s forwards;
-    -webkit-animation: boing .5s forwards;
-    animation: boing .5s forwards;
+	background-color: #d46b15;
+	-moz-animation: boing .5s forwards;
+	-o-animation: boing .5s forwards;
+	-webkit-animation: boing .5s forwards;
+	animation: boing .5s forwards;
 }
 
 .slider > ul > li:hover {
-    background-color: #d46f10;
+	background-color: #d46b15;
 }
 
 .slider > .show {
@@ -347,14 +349,21 @@ img{
 
 /* -------------------------------------- */
 #steps ul {
-  margin: 80px 0;
+	margin: 60px 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 0 40px;
+	padding-left: 60px;
 }
 #steps ul li{
-  width: 300px;
-  float: left;
+  width: 273px;
+  /* float: left; */
   padding-top: 140px;
   text-align: center;
-  margin-right: 10px;
+	margin-right: 20px;
+	margin-top: 30px;
 }
 #steps h4 {
   text-transform: uppercase;
@@ -364,13 +373,13 @@ img{
   margin-bottom: 20px;
 }
 #step-1 {
-  background: url('https://image.ibb.co/bB1wnQ/steps_icon_1_1.png') no-repeat top center;
+  background: url('../images/plan.png') no-repeat top center;
 }
 #step-2 {
-  background: url('https://image.ibb.co/ghFYZ5/steps_icon_2.png') no-repeat top center;
+  background: url('../images/org.png') no-repeat top center;
 }
 #step-3 {
-  background: url('https://image.ibb.co/icgJ1k/steps_icon_3.png') no-repeat top center;
+  background: url('../images/trav.png') no-repeat top center;
 }
 
 
@@ -379,7 +388,7 @@ img{
 	right: 20px;
 	top: 10%;
 	background-color: #c63666;
-	background-color: #d46f10;
+	background-color: #d46b15;
 	color: white;
 	margin-top: 50px;
 	padding: 50px 40px;
@@ -391,6 +400,7 @@ img{
 	width: 95vw;
   margin: auto;
 	padding: 20px;
+	padding-left: 10px;
 	display: flex;
 	justify-content: space-around;
 	flex-direction: row;
@@ -408,7 +418,7 @@ img{
 	text-align: center;
 	text-align: left;
 	background-color: #56297d;
-	background-color: #d46f10;
+	background-color: #d46b15;
 	background-color: rgb(97, 87, 87);
 	background-color: rgb(214, 210, 210);
 	border: none;
@@ -510,7 +520,7 @@ img{
 	margin-right: 10px;
 	text-decoration: none;
 	color: white;
-	color: rgb(212, 111, 16);
+	color: #d46b15;
 }
 .show-details {
 	font-display: flex;
@@ -523,7 +533,7 @@ img{
 	position: absolute;
 	top: 266px;
 	right: -18px;
-	color: rgb(212, 111, 16);
+	color: #d46b15;
 	font-size: 30px;
 	text-shadow: 1px 1px 4px #010713;
 	z-index: 2;
@@ -532,7 +542,7 @@ img{
 
 button {
 	background-color: #e17bba;
-	background-color: #d46f10;
+	background-color: #d46b15;
   color: white;
   font-weight: bold;
   border: none;
@@ -606,7 +616,7 @@ button:hover {
 	}
 	.menu {
 		width: 100%;
-		background-color: orange;
+		background-color: #d46b15;
 		padding-bottom: 5px;
     padding-top: 5px;
 	}
