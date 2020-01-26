@@ -10,19 +10,29 @@
   </head>
   <body>
       <div class="header">
-          <div class="heading">
-            <h1><i class="fas fa-suitcase-rolling"></i> I Want to travell!</h1>
+        <div class="heading">
+          <h1><i class="fas fa-suitcase-rolling"></i> I Want to travell!</h1>
+        </div>
+        <div class="menu">
+            <nav>
+              <ul class="navigation-menu">
+                <li class="navitation-item"> <a href="#main-image">Accueil</a></li>
+                <li class="navitation-item"> <a href="#steps">Destination</a></li>
+                <li class="navitation-item"> <a href="#posibilities">Circuit</a></li>
+                <li class="navitation-item"> <a href="#contact">Contact</a></li>
+              </ul>
+            </nav>
+        <div class="cart">
+          <i class="fa fa-shopping-basket fa-2x"></i>
+          <i class="fa fa-caret-down"></i><br>
+          <div class="total-text">
+            <p>Items</p>
+            <p id="items-basket"></p>
           </div>
-          <div class="cart">
-            <i class="fa fa-shopping-basket fa-2x"></i>
-            <i class="fa fa-caret-down"></i><br>
-            <div class="total-text">
-              <p>Items</p>
-              <p id="items-basket"></p>
-            </div>
-          </div>
-      
-          <div id="cart-items">
+        </div>
+      </div>
+        </div>
+        <div id="cart-items">
             <ol id="list-item">
             </ol>
       
@@ -32,6 +42,32 @@
             </div>
           </div>
         </div>
+
+<!-- Slider 1 -->
+<div class="slider" id="slider1">
+    <!-- Slides -->
+
+    <div style="background-image:url(https://image.ibb.co/iWXcu5/main.jpg)"></div>
+    <div style="background-image:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/30256/Gif-pont-lueur-600.gif)"></div>
+    <div style="background-image:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/30256/1200_110627-8240-Myst.jpg)"></div>
+    <div style="background-image:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/30256/1200_Sharpened-version.jpg)"></div>
+    <!-- The Arrows -->
+    <i class="left" class="arrows" style="z-index:2; position:absolute;"><svg viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z"></path></svg></i>
+    <i class="right" class="arrows" style="z-index:2; position:absolute;"><svg viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" transform="translate(100, 100) rotate(180) "></path></svg></i>
+    <!-- Title Bar -->
+    <span class="titleBar">
+            <h2 style="text-align: center;">Fully customizable tours offered by Iranogram tour guides</h2>
+            <ul class="services">
+              <li class="service"><i class="fas fa-check"></i>Flights</li>
+              <li class="service"><i class="fas fa-check"></i>Tours</li>
+              <li class="service"><i class="fas fa-check"></i>Services</li>
+            </ul>
+    </span>
+</div>
+
+</div>
+
+          
         <main>
         <div class="items-container">
           <!-- Item 1 -->
@@ -110,11 +146,35 @@
           </div>
         </div>
       </main>
-      <div class="navigation">
-        <i class="fas fa-circle"></i>
-        <i class="far fa-circle"></i>
-        <i class="far fa-circle"></i>
-      </div>
+      <div class="header-services">
+          <h2 style="text-align: center;">Fully customizable tours offered by Iranogram tour guides</h2>
+          <ul class="services">
+            <li class="service"><i class="fas fa-check"></i>Flights</li>
+            <li class="service"><i class="fas fa-check"></i>Tours</li>
+            <li class="service"><i class="fas fa-check"></i>Services</li>
+          </ul>
+        </div>
+      <section id="steps">
+          <div class="wrapper">
+            <ul>  
+              <li id="step-1">
+                <h4 >Planifier</h4>
+                <p>Confiez-nous vos rêves d'évasion : en famille ou entre amis, nous trouverons la formule qui comblera vos attentes.
+      </p>
+              </li>
+              <li id="step-2">
+                <h4 >Organiser</h4>
+                <p>Bénéficiez de l'expertise de nos spécialistes de chaque destination, ils vous accompagnent dans la réalisation de votre voyage.
+      </p>
+              </li>
+              <li id="step-3">
+                <h4 >Voyager</h4>
+                <p>Nous nous chargeons d'assurer votre sécurité et de veiller à votre pleine sérénité tout au long de votre voyage.</p>
+              </li>
+              <div class="clear"></div>
+            </ul>
+          </div>
+        </section>
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="js/main.js"></script>
   </body>
