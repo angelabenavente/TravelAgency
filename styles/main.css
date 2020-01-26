@@ -657,4 +657,34 @@ button:hover {
 	.prices {
 		width: 92%;
 	}
+	
+	
+}
+/* contact section */
+.container {
+	padding: 50px 0;
+	color: white;
+}
+
+fieldset {
+	margin-top: 20px;
+	border: none;
+	display: flex;
+	align-items: center;
+}
+
+input {
+	height: 20px;
+	padding: 10px;
+	border-radius: 10px;
+	width: 300px;
+	border: 2px solid orange;
+	margin: auto;
+}
+.contact-header {
+	padding: 30px;
+	background-color: #d46b15;
+}
+form {
+	background-color: white;
 }
