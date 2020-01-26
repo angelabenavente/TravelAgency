@@ -657,34 +657,115 @@ button:hover {
 	.prices {
 		width: 92%;
 	}
+
+	#contact {
+		padding: 0;
+	}
 	
 	
 }
 /* contact section */
 .container {
-	padding: 50px 0;
+	padding: 0px 0 30px;
 	color: white;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	background-color: #d46b15;
+	/* background-image: url('../images/nubes.jpg'); */
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: rgba(216, 131, 52, 0.753);
 }
 
 fieldset {
-	margin-top: 20px;
+	margin-top: 10px;
 	border: none;
 	display: flex;
+	padding-left: 8px;
 	align-items: center;
+	width: fit-content;
 }
-
+.fullName {
+	display: flex;
+	width: fit-content;
+	/* align-items: center;
+	justify-content: center; */
+}
 input {
 	height: 20px;
 	padding: 10px;
 	border-radius: 10px;
-	width: 300px;
+	width: 280px;
 	border: 2px solid orange;
-	margin: auto;
 }
+.firstName, .lastName {
+	width: 124px;
+}
+
 .contact-header {
-	padding: 30px;
+	padding: 15px 40px 20px;
 	background-color: #d46b15;
+	color: white;
+	text-align: left;
+	font-size: 30px;
+}
+
+.contactSub {
+	margin-top: 10px;
+	font-size: 20px;
 }
 form {
-	background-color: white;
+	margin-top: 28px;
+	/* background-color: rgba(228, 164, 105, 0.699); */
+	padding-left: 40px;
+	width: fit-content;
+}
+
+.textArea {
+	width:278px;
+	margin-left: 1px;
+	border: 2px solid orange;
+	border-radius: 10px;
+	height: 171px;
+	padding: 15px 10px;
+}
+
+.submitButton {
+	width: 300px;
+	display: flex;
+	justify-content: right;
+	margin-top: 0px;
+
+}
+
+.submitButton > button {
+margin-left: 239px;
+margin-right: 0;
+padding: 10px;
+border-radius: 10px;
+margin-bottom: 0;
+background-color: white;
+color: orange;
+}
+.contact-info {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.map {
+	width: 300px;
+	margin-top: 40px;
+	height: 405px;
+	margin-right: 50px;
+}
+
+.contact-details {
+	margin-top: 90px;
+	margin-right: 50px;
+	height: 305px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
 }

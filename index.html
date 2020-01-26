@@ -239,31 +239,49 @@
             </ul>
           </div>
         </section>
-        <div class="container">
-          <div class="contact-header">
+        <div class="contact-header">
             <h3>Quick Contact</h3>
-            <h4>Contact us today, and get reply with in 24 hours!</h4>
+            <h4 class="contactSub">Contact us today, and get reply with in 24 hours!</h4>
           </div>
+        <div class="container">
             <form id="contact" action="" method="post">
+            <div class="fullName">
             <fieldset>
-              <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+              <input class="firstName" placeholder="First Name" type="text" required autofocus>
             </fieldset>
             <fieldset>
-              <input placeholder="Your Email Address" type="email" tabindex="2" required>
+              <input class="lastName" placeholder="Last Name" type="text" required autofocus>
+            </fieldset>
+          </div>
+            <fieldset>
+              <input placeholder="Email Address" type="email" required>
             </fieldset>
             <fieldset>
-              <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+              <input placeholder="Phone Number" type="tel"  required>
             </fieldset>
-            <fieldset>
-              <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+            <fieldset >
+              <textarea class="textArea" placeholder="Drop your message here...."  required></textarea>
             </fieldset>
-            <fieldset>
+            <fieldset class="submitButton">
               <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
             </fieldset>
           </form>
-         
-          
+          <div class="contact-info">
+          <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30077702.55660537!2d-60.24492242447662!3d62.60511537139601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ea20dbbe3c07715%3A0x34cf9d830114e218!2sGroenlandia!5e0!3m2!1ses!2ses!4v1580073481173!5m2!1ses!2ses" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          <div class="contact-details">
+            <p><i class="fas fa-map-marked-alt"></i>Groenlandia</p>
+            <p><i class="fas fa-phone-square-alt"></i>+777 987654321</p>
+            <p><i class="fab fa-whatsapp-square"></i>+777 987654321</p>
+            <a><i class="fas fa-envelope-square"></i></i>traveldreams@td.com</a>
+            <p><i class="fab fa-twitter-square"></i>@travel_dreams_agency</p>
+            <p><i class="fas fa-camera-retro"></i>@travel_dreams_agcy</p>
+            <p><i class="fas fa-hashtag"></i>TravelDreams</p>
+            <p><i class="fas fa-hashtag"></i>TravelDreamsAgency</p>
+            <p><i class="fas fa-hashtag"></i>GoWithTravelDreams</p>
+          </div>
         </div>
+        </div>
+        
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="js/main.js"></script>
   </body>
