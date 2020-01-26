@@ -117,6 +117,12 @@ img{
 	text-align: center;
 }
 
+.list-guide {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+}
+
 .cart:hover {
 	transform: scale(1.05);
 	text-shadow: -1px 1px 2px #5e330bee;
