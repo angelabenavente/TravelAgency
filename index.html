@@ -9,18 +9,18 @@
     <link href="./styles/main.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-      <div class="header">
-        <div class="heading">
-          <h1><i class="fas fa-suitcase-rolling"></i> Travel Dreams</h1>
-        </div>
-        <div class="menu">
-            <nav>
-              <ul class="navigation-menu">
-                <li class="navitation-item"> <a href="#promotions">Promotions</a></li>
-                <li class="navitation-item"> <a href="#services">Services</a></li>
-                <li class="navitation-item"> <a href="#contact">Contact</a></li>
-              </ul>
-            </nav>
+    <div class="header">
+      <div class="heading">
+        <h1><i class="fas fa-suitcase-rolling"></i> Travel Dreams</h1>
+      </div>
+      <div class="menu">
+        <nav>
+          <ul class="navigation-menu">
+            <li class="navitation-item"> <a href="#promotions">Promotions</a></li>
+            <li class="navitation-item"> <a href="#services">Services</a></li>
+            <li class="navitation-item"> <a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
         <div class="cart">
           <i class="fa fa-shopping-basket fa-2x"></i>
           <i class="fa fa-caret-down"></i><br>
@@ -29,255 +29,300 @@
           </div>
         </div>
       </div>
-        </div>
-        <div class="cart-items" id="cart-items">
-            <ol class="list-item" id="list-item">
-            </ol>
+    </div>
+    <div class="cart-items" id="cart-items">
+      <ol class="list-item" id="list-item">
+      </ol>
+      <div class="total-text">
+        <p>Total: </p>
+        <p id="total-price"></p>
+      </div>
+    </div>
+
+
+  <!----Slider---->
+
+    <div class="slider" id="slider1">
+      <div style="background-image:url(https://www.hotelcabanastulum.com/wp-content/uploads/2017/07/what-to-do-in-tulum-mexico_h.jpg)"></div>
+      <div style="background-image:url(https://lp-cms-production.imgix.net/2019-06/dcf1e0ec17d14df8fac9a7a57c7af63d-china.jpg?fit=crop&q=40&sharp=10&vib=20&auto=format&ixlib=react-8.6.4)"></div>
+      <div style="background-image:url(https://www.voglioviverecosi.com/wp-content/uploads/2019/11/TRAFERIRSI-IN-AUSTRALIA-TOP.jpg)"></div>
+
+      <!----Arrows---->
+
+      <i class="left" class="arrows" style="z-index:2; position:absolute;">
+        <svg viewBox="0 0 100 100">
+          <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z"></path>
+        </svg>
+      </i>
+      <i class="right" class="arrows" style="z-index:2; position:absolute;">
+        <svg viewBox="0 0 100 100">
+          <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" transform="translate(100, 100) rotate(180) "></path>
+        </svg>
+      </i>
       
-            <div class="total-text">
-                <p>Total: </p>
-                <p id="total-price"></p>
-            </div>
-          </div>
-        </div>
+      <!---Title-bar--->
 
-<!-- Slider 1 -->
-<div class="slider" id="slider1">
-    <!-- Slides -->
-
-    <div style="background-image:url(https://www.hotelcabanastulum.com/wp-content/uploads/2017/07/what-to-do-in-tulum-mexico_h.jpg)"></div>
-    <div style="background-image:url(https://lp-cms-production.imgix.net/2019-06/dcf1e0ec17d14df8fac9a7a57c7af63d-china.jpg?fit=crop&q=40&sharp=10&vib=20&auto=format&ixlib=react-8.6.4)"></div>
-    <div style="background-image:url(https://www.voglioviverecosi.com/wp-content/uploads/2019/11/TRAFERIRSI-IN-AUSTRALIA-TOP.jpg)"></div>
-    <!-- <div style="background-image:url(https://blogimages.musement.com/2019/06/15-Grecia_Fotolia_218021187_Subscription_XL.jpg)"></div> -->
-    <!-- The Arrows -->
-    <i class="left" class="arrows" style="z-index:2; position:absolute;"><svg viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z"></path></svg></i>
-    <i class="right" class="arrows" style="z-index:2; position:absolute;"><svg viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" transform="translate(100, 100) rotate(180) "></path></svg></i>
-    <!-- Title Bar -->
-    <span class="titleBar">
+      <span class="titleBar">
         <h2 style="text-align: center;">Walk along people experiences to each point of the world</h2>
-    </span>
-</div>
+      </span>
+    </div>
 
-</div>
+    <!----Main---->
+            
+    <main>
+      <div id="promotions" class="items-container">
 
-          
-        <main>
-        <div id="promotions" class="items-container">
-          <!-- Item 1 -->
-          <div class="item">
-            <div class="item-detail">
-              <img src="images/bahia2.jpg">
-              
-              <h4>English Bay</h4>
-              
-              <div class="prices">
-                <div class="priceContainer">
-                  <p>Desde</p>
-                  <p class="price">1000</p>
-                  <p>$</p>
-                </div>
+        <!-- Item 1 -->
+
+        <div class="item">
+          <div class="item-detail">
+            <img src="images/bahia2.jpg">
+            <h4>English Bay</h4>
+            <div class="prices">
+              <div class="priceContainer">
+                <p>Desde</p>
+                <p class="price">1000</p>
+                <p>$</p>
               </div>
-              <button class="firstButton"><i class="fa fa-cart-plus" id="basket"></i> Add to cart</button>
-              <div class="show-details">
-                <a href="#" class="info-link"><i class="fas fa-info-circle"></i></a>
+            </div>
+            <button class="firstButton">
+              <i class="fa fa-cart-plus" id="basket"></i> Add to cart
+            </button>
+            <div class="show-details">
+              <a href="#" class="info-link">
+                <i class="fas fa-info-circle"></i>
+              </a>
+            </div>
+              <div class="more-info">
+                <p>Bahía Inglesa, in the coastal region of the Atacama Desert, in northern Chile, is known for its beaches with rocky formations and calm and transparent waters.</p>
               </div>
-                <div class="more-info">
-                  <p>Bahía Inglesa, in the coastal region of the Atacama Desert, in northern Chile, is known for its beaches with rocky formations and calm and transparent waters.</p>
-                </div>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        
+        <div class="item">
+          <img src="images/iquique2.jpg">
+          <div class="item-detail">
+            <h4>Iquique</h4>
+            <div class="prices">
+              <div class="priceContainer">
+                <p>Desde</p>
+                <p class="price">900</p>
+                <p>$</p>
+              </div>
+            </div>
+            <button class="secondButton">
+              <i class="fa fa-cart-plus" id="basket"></i> Add to cart
+            </button>
+            <div class="show-details">
+              <a href="#" class="info-link">
+                <i class="fas fa-info-circle"></i>
+              </a>
+            </div>
+            <div class="more-info">
+              <p>Iquique is a coastal city in northern Chile and west of the Atacama Desert. In the 19th century, it stood out for the prosperity of its saltpeter mines.</p>
             </div>
           </div>
+        </div>
+
+        <!-- Item 3 -->
+
+        <div class="item">
+          <div class="item-detail">
+            <img src="images/arica2.jpeg">
+            <h4>Arica</h4>
+            <div class="prices">
+              <div class="priceContainer">
+                <p>Desde</p>
+                <p class="price">850</p>
+                <p>$</p>
+              </div>
+            </div>
+            <button class="secondButton">
+              <i class="fa fa-cart-plus" id="basket"></i> Add to cart
+            </button>
+            <div class="show-details">
+              <a href="#" class="info-link">
+                <i class="fas fa-info-circle"></i>
+              </a>
+            </div>
+            <div class="more-info">
+              <p>Arica is a port city in northern Chile known for its beaches ideal for surfing and for its architecture. To the north of the city is the Historical and Weapons Museum.</p>
+            </div>
+          </div>
+        </div>
+
+        <!---item 4-->
+
+        <div class="item">
+          <div class="item-detail">
+            <img src="images/muuri.jpg">
+            <h4>Huairou</h4>
+            <div class="prices">
+              <div class="priceContainer">
+                <p>Desde</p>
+                <p class="price">1500</p>
+                <p>$</p>
+              </div>
+            </div>
+            <button class="firstButton">
+              <i class="fa fa-cart-plus" id="basket"></i> Add to cart
+            </button>
+            <div class="show-details">
+              <a href="#" class="info-link">
+                <i class="fas fa-info-circle"></i>
+              </a>
+            </div>
+            <div class="more-info">
+              <p>In Huairou is located the Great Wall of China is an ancient Chinese fortification built and rebuilt between the 5th century B.C. and the 16th century.</p>
+            </div>
+          </div>
+        </div>
+
+        <!---item 5-->
+
+        <div class="item">
+          <div class="item-detail">
+            <img src="images/paris.jpg">
+            <h4>Paris</h4>
+            <div class="prices">
+              <div class="priceContainer">
+                <p>Desde</p>
+                <p class="price">600</p>
+                <p>$</p>
+              </div>
+            </div>
+            <button class="firstButton">
+              <i class="fa fa-cart-plus" id="basket"></i> Add to cart
+            </button>
+            <div class="show-details">
+              <a href="#" class="info-link">
+                <i class="fas fa-info-circle"></i>
+              </a>
+            </div>
+            <div class="more-info">
+              <p>Paris is crisscrossed by wide boulevards and the Seine River. The city is famous for landmarks, such as the Eiffel Tower, the Arch of Triumph and the Notre Dame Cathedral.</p>
+            </div>
+          </div>
+        </div>
+
+        <!---item 6-->
+
+        <div class="item">
+          <div class="item-detail">
+            <img src="images/grecia.jpeg">
+            <h4>Navagio</h4>
+            <div class="prices">
+              <div class="priceContainer">
+                <p>Desde</p>
+                <p class="price">385</p>
+                <p>$</p>
+              </div>
+            </div>
+            <button class="firstButton">
+              <i class="fa fa-cart-plus" id="basket"></i> Add to cart
+            </button>
+            <div class="show-details">
+              <a href="#" class="info-link">
+                <i class="fas fa-info-circle"></i>
+              </a>
+            </div>
+            <div class="more-info">
+              <p>Navagio Beach, is an exposed cove, sometimes called "Cala de los Contrabandistas", on the coast of Zakynthos, in the Ionian Islands of Greece.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!----Services--->
+
+    <div id="services" class="header-services">
+      <h2 style="text-align: center;">Fully customizable tours offered by Travel Dreams</h2>
+      <ul class="services">
+        <li class="service"><i class="fas fa-check"></i>Flights</li>
+        <li class="service"><i class="fas fa-check"></i>Tours</li>
+        <li class="service"><i class="fas fa-check"></i>Services</li>
+      </ul>
+    </div>
+
+    <section class="steps" id="steps">
+      <div class="wrapper">
+        <ul class="list-guide">  
+          <li class="step-1" id="step-1">
+            <h4 >Planning</h4>
+            <p>Confide in us your dreams of escape: from accommodation to a plan of specialized tours, we will create a fully detailed board for you and yours.</p>
+            <p>We will find the formula that will fulfill your expectations because our specialty is care of you and yours.</p>
+          </li>
+          <li class="step-2" id="step-2">
+            <h4 >Organization</h4>
+            <p>Benefit from the expertise of our specialists team of each destination, they accompany you in the realization of your perfect trip experience.</p>
+            <p>Whether you have everything planned or want to get carried away, we have a specialist team in what you ever dreamed.</p>
+          </li>
+          <li class="step-3" id="step-3">
+            <h4 >Travell</h4>
+            <p>We take care to ensure your safety and to ensure your full serenity throughout at every moment of your journey. Everything will be in time</p>
+            <p>You won’t have to worry about planning your return, looking for the best form of transportation or the means that suit you.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="contact-header">
+      <h3>Quick Contact</h3>
+      <h4 class="contactSub">Contact us today, and get reply with in 24 hours!</h4>
+    </div>
+
+    <div class="container">
+      <form class="contact" id="contact" action="" method="post">
+        <div class="fullName">
+          <fieldset>
+            <input class="firstName" placeholder="First Name" type="text" required autofocus>
+          </fieldset>
+          <fieldset>
+            <input class="lastName" placeholder="Last Name" type="text" required autofocus>
+          </fieldset>
+        </div>
+        <fieldset>
+          <input placeholder="Email Address" type="email" required>
+        </fieldset>
+        <fieldset>
+          <input placeholder="Phone Number" type="tel"  required>
+        </fieldset>
+        <fieldset >
+          <textarea class="textArea" placeholder="Drop your message here...."  required></textarea>
+        </fieldset>
+        <fieldset class="submitButton">
+          <button name="submit" type="submit" id="contact-submit" data-submit="...Sending" >Submit</button>
+        </fieldset>
+      </form>
       
-          <!-- Item 2 -->
-          <div class="item">
-            <img src="images/iquique2.jpg">
-            <div class="item-detail">
-              <h4>Iquique</h4>
-              <div class="prices">
-                <!-- <div>
-                  <i class="fas fa-plane"></i>
-                  <i class="fas fa-hotel"></i>
-                  <i class="fas fa-sync"></i>
-                </div> -->
-                <div class="priceContainer">
-                  <p>Desde</p>
-                  <p class="price">900</p>
-                  <p>$</p>
-                </div>
-              </div>
-              <button class="secondButton"><i class="fa fa-cart-plus" id="basket"></i> Add to cart</button>
-              <div class="show-details">
-                <a href="#" class="info-link"><i class="fas fa-info-circle"></i></a>
-              </div>
-                <div class="more-info">
-                  <p>Iquique is a coastal city in northern Chile and west of the Atacama Desert. In the 19th century, it stood out for the prosperity of its saltpeter mines.</p>
-                </div>
-            </div>
-          </div>
+      <div class="contact-info">
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30077702.55660537!2d-60.24492242447662!3d62.60511537139601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ea20dbbe3c07715%3A0x34cf9d830114e218!2sGroenlandia!5e0!3m2!1ses!2ses!4v1580073481173!5m2!1ses!2ses" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
       
-          <!-- Item 3 -->
-          <div class="item">
-            <div class="item-detail">
-              <img src="images/arica2.jpeg">
-              <h4>Arica</h4>
-              <div class="prices">
-
-                <div class="priceContainer">
-                  <p>Desde</p>
-                  <p class="price">850</p>
-                  <p>$</p>
-                </div>
-              </div>
-              <button class="secondButton"><i class="fa fa-cart-plus" id="basket"></i> Add to cart</button>
-              <div class="show-details">
-                <a href="#" class="info-link"><i class="fas fa-info-circle"></i></a>
-              </div>
-
-                <div class="more-info">
-                  <p>Arica is a port city in northern Chile known for its beaches ideal for surfing and for its architecture. To the north of the city is the Historical and Weapons Museum.</p>
-                </div>
-            </div>
-          </div>
-          <!---item 4-->
-          <div class="item">
-              <div class="item-detail">
-                <img src="images/muuri.jpg">
-                
-                <h4>Huairou</h4>
-                
-                <div class="prices">
-                  <div class="priceContainer">
-                    <p>Desde</p>
-                    <p class="price">1500</p>
-                    <p>$</p>
-                  </div>
-                </div>
-                <button class="firstButton"><i class="fa fa-cart-plus" id="basket"></i> Add to cart</button>
-                <div class="show-details">
-                  <a href="#" class="info-link"><i class="fas fa-info-circle"></i></a>
-                </div>
-                  <div class="more-info">
-                    <p>In Huairou is located the Great Wall of China is an ancient Chinese fortification built and rebuilt between the 5th century B.C. and the 16th century.</p>
-                  </div>
-              </div>
-            </div>
-                      <!---item 5-->
-          <div class="item">
-              <div class="item-detail">
-                <img src="images/paris.jpg">
-                
-                <h4>Paris</h4>
-                
-                <div class="prices">
-                  <div class="priceContainer">
-                    <p>Desde</p>
-                    <p class="price">600</p>
-                    <p>$</p>
-                  </div>
-                </div>
-                <button class="firstButton"><i class="fa fa-cart-plus" id="basket"></i> Add to cart</button>
-                <div class="show-details">
-                  <a href="#" class="info-link"><i class="fas fa-info-circle"></i></a>
-                </div>
-                  <div class="more-info">
-                    <p>Paris is crisscrossed by wide boulevards and the Seine River. The city is famous for landmarks, such as the Eiffel Tower, the Arch of Triumph and the Notre Dame Cathedral.</p>
-                  </div>
-              </div>
-            </div>
-                      <!---item 6-->
-          <div class="item">
-              <div class="item-detail">
-                <img src="images/grecia.jpeg">
-                
-                <h4>Navagio</h4>
-                
-                <div class="prices">
-                  <div class="priceContainer">
-                    <p>Desde</p>
-                    <p class="price">385</p>
-                    <p>$</p>
-                  </div>
-                </div>
-                <button class="firstButton"><i class="fa fa-cart-plus" id="basket"></i> Add to cart</button>
-                <div class="show-details">
-                  <a href="#" class="info-link"><i class="fas fa-info-circle"></i></a>
-                </div>
-                  <div class="more-info">
-                    <p>Navagio Beach, is an exposed cove, sometimes called "Cala de los Contrabandistas", on the coast of Zakynthos, in the Ionian Islands of Greece.</p>
-                  </div>
-              </div>
-            </div>
+        <div class="contact-details">
+          <a class="socialLink" href="https://www.google.com/maps/place/Groenlandia/@67.3906017,-65.7421858,4z/data=!4m5!3m4!1s0x4ea20dbbe3c07715:0x34cf9d830114e218!8m2!3d71.706936!4d-42.604303?hl=es" target="_blank">
+            <i class="contactIcon fas fa-map-marked-alt"></i>Groenlandia
+          </a>
+          <a class="socialLink" href="telf:#">
+            <i class="contactIcon fas fa-phone-square-alt"></i>+777 987654321
+          </a>
+          <a class="socialLink" href="mailto:#">
+            <i class="contactIcon fas fa-envelope-square"></i>traveldreams@td.com
+          </a>
+          <a class="socialLink" href="https://twitter.com" target="_blank">
+            <i class="contactIcon fab fa-twitter-square"></i>@travel_dreams_agency
+          </a>
+          <a class="socialLink" href="https://www.instagram.com" target="_blank">
+            <i class="contactIcon fas fa-camera-retro"></i>@travel_dreams_agcy
+          </a>
+          <a class="socialLink" href="https://www.instagram.com/explore/tags/travelwithdreams" target="_blank">
+            <i class="contactIcon fas fa-hashtag"></i> TravelWithDreams
+          </a>
         </div>
-      </main>
-      <div id="services" class="header-services">
-          <h2 style="text-align: center;">Fully customizable tours offered by Travel Dreams</h2>
-          <ul class="services">
-            <li class="service"><i class="fas fa-check"></i>Flights</li>
-            <li class="service"><i class="fas fa-check"></i>Tours</li>
-            <li class="service"><i class="fas fa-check"></i>Services</li>
-          </ul>
-        </div>
-      <section class="steps" id="steps">
-          <div class="wrapper">
-            <ul class="list-guide">  
-              <li class="step-1" id="step-1">
-                <h4 >Planning</h4>
-                <p>Confide in us your dreams of escape: from accommodation to a plan of specialized tours, we will create a fully detailed board for you and yours.</p>
-                <p>We will find the formula that will fulfill your expectations because our specialty is care of you and yours.</p>
-      </p>
-              </li>
-              <li class="step-2" id="step-2">
-                <h4 >Organization</h4>
-                <p>Benefit from the expertise of our specialists team of each destination, they accompany you in the realization of your perfect trip experience.</p>
-                <p>Whether you have everything planned or want to get carried away, we have a specialist team in what you ever dreamed.
-      </p>
-              </li>
-              <li class="step-3" id="step-3">
-                <h4 >Travell</h4>
-                <p>We take care to ensure your safety and to ensure your full serenity throughout at every moment of your journey. Everything will be in time</p>
-                <p>You won’t have to worry about planning your return, looking for the best form of transportation or the means that suit you.</p>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <div class="contact-header">
-            <h3>Quick Contact</h3>
-            <h4 class="contactSub">Contact us today, and get reply with in 24 hours!</h4>
-          </div>
-        <div class="container">
-            <form class="contact" id="contact" action="" method="post">
-            <div class="fullName">
-            <fieldset>
-              <input class="firstName" placeholder="First Name" type="text" required autofocus>
-            </fieldset>
-            <fieldset>
-              <input class="lastName" placeholder="Last Name" type="text" required autofocus>
-            </fieldset>
-          </div>
-            <fieldset>
-              <input placeholder="Email Address" type="email" required>
-            </fieldset>
-            <fieldset>
-              <input placeholder="Phone Number" type="tel"  required>
-            </fieldset>
-            <fieldset >
-              <textarea class="textArea" placeholder="Drop your message here...."  required></textarea>
-            </fieldset>
-            <fieldset class="submitButton">
-              <button name="submit" type="submit" id="contact-submit" data-submit="...Sending" >Submit</button>
-            </fieldset>
-          </form>
-          <div class="contact-info">
-          <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30077702.55660537!2d-60.24492242447662!3d62.60511537139601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ea20dbbe3c07715%3A0x34cf9d830114e218!2sGroenlandia!5e0!3m2!1ses!2ses!4v1580073481173!5m2!1ses!2ses" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-          <div class="contact-details">
-            <a class="socialLink" href="https://www.google.com/maps/place/Groenlandia/@67.3906017,-65.7421858,4z/data=!4m5!3m4!1s0x4ea20dbbe3c07715:0x34cf9d830114e218!8m2!3d71.706936!4d-42.604303?hl=es" target="_blank"><i class="contactIcon fas fa-map-marked-alt"></i>Groenlandia</a>
-            <a class="socialLink" href="telf:#"><i class="contactIcon fas fa-phone-square-alt"></i>+777 987654321</a>
-            <a class="socialLink" href="mailto:#"><i class="contactIcon fas fa-envelope-square"></i>traveldreams@td.com</a>
-            <a class="socialLink" href="https://twitter.com" target="_blank"><i class="contactIcon fab fa-twitter-square"></i>@travel_dreams_agency</a>
-            <a class="socialLink" href="https://www.instagram.com" target="_blank"><i class="contactIcon fas fa-camera-retro"></i>@travel_dreams_agcy</a>
-            <a class="socialLink" href="https://www.instagram.com/explore/tags/travelwithdreams" target="_blank"><i class="contactIcon fas fa-hashtag"></i> TravelWithDreams</a>
-          </div>
-        </div>
-        </div>
+      </div>
+    </div>
         
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="js/main.js"></script>

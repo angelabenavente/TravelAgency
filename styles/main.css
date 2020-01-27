@@ -394,7 +394,6 @@ main {
 .steps ul li{
   width: 273px;
 	padding-top: 140px;
-	margin-right: 20px;
 	margin-top: 30px;
   text-align: center;
 }
@@ -732,7 +731,7 @@ form {
 	.navitation-item:hover {
 		box-shadow: none;
 	}
-	
+
 	.heading {
 		padding-bottom: 10px;
 	}
@@ -779,6 +778,7 @@ form {
 
 	.fa-shopping-basket {
 		font-size: 20px;
+		margin-right: 3px;
 	}
 
 	.firstButton, .secondButton {
