@@ -387,7 +387,7 @@ img{
 #cart-items{
 	position: absolute;
 	right: 15px;
-	top: 10%;
+	top: 4%;
 	background-color: #c63666;
 	color: #d46b15;
 	background-color: white;
@@ -774,7 +774,10 @@ form {
 		padding-bottom: 8px;
     padding-top: 0px;
 	}
-
+ #cart-items {
+	top: 8vh;
+	right: 0;
+ }
 	.navitation-item {
 		margin-right: 5px;
 		font-size: 14px;
